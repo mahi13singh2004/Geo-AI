@@ -1,0 +1,19 @@
+# Quick Start Commands
+
+## Setup
+pip install -r requirements.txt
+
+## Run Server
+uvicorn app.main:app --reload
+
+## API Documentation
+http://127.0.0.1:8000/docs
+
+## Test
+pytest
+
+## Example Usage
+python example_client.py tests/fixtures/sample_polygon.kml
+
+## Upload File (curl)
+curl -X POST http://127.0.0.1:8000/api/v1/files/ -F "file=@your_file.kml"
